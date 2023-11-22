@@ -1,8 +1,9 @@
 //your code here
-let input = document.getElementById("evaluatedText");
+let inputElement = document.getElementById("evaluatedText");
 let heading = document.getElementById("letterCount");
+console.log(inputElement);
 heading.innerText = 0;
-input.addEventListener("change", onChange);
+inputElement.addEventListener("input", onChange);
 function onChange() {
-	heading.innerText = inpt.value.length;
+	heading.innerText = inputElement.value.length;
 }
