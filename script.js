@@ -10,7 +10,7 @@
 
 const enteredText = document.getElementById("evaluatedText");
 const letterCount = document.getElementById("letterCount");
-
+letterCount.textContent = 0;
 enteredText.addEventListener("input",() => {
 	let text = enteredText.value;
 	let count =text.length;
